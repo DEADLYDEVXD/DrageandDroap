@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+// By dev patel
+// date: 01/05/2024
+
+
+// html and css files are imported from lovable ai.
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Flow Board — Drag & Drop To-Do</title>
+  <meta name="description" content="A simple drag and drop to-do list built with pure HTML, CSS and JavaScript." />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+  <main class="page">
+    <header class="hero">
+      <h1>Flow Board</h1>
+      <p>A drag &amp; drop to-do list to organize your day.</p>
+    </header>
+
+    <div class="add-form">
+      <input id="task-input" type="text" placeholder="Add a new task..." autocomplete="off" />
+      // so here the function for adding a taks
+      <button type="button" onclick="addTask()">+ Add</button>
+    </div>
+
+    <section class="board">
+      <section class="column" id="todo">
+        <header>
+          <h2>To Do</h2>
+          <p>Plan it</p>
+        </header>
+      </section>
+
+      <section class="column" id="doing">
+        <header>
+          <h2>In Progress</h2>
+          <p>Focus mode</p>
+        </header>
+      </section>
+
+      <section class="column" id="done">
+        <header>
+          <h2>Done</h2>
+          <p>Celebrate 🎉</p>
+        </header>
+      </section>
+    </section>
+  </main>
+
+  <script src="main.js"></script>
+</body>
+
+</html>
